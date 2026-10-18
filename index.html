@@ -1,146 +1,265 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Petal & Pore</title>
+  <title>Maria Nails Studio</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- NAVBAR -->
+  <!-- NAV -->
   <nav>
-    <a href="#" class="logo">Petal & Pore</a>
-    <ul>
-      <li><a href="#treatments">Services</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Book</a></li>
-    </ul>
+    <div class="nav-inner">
+      <ul class="nav-left">
+        <li><a href="#behandelingen">Behandelingen</a></li>
+        <li><a href="#over">Over ons</a></li>
+      </ul>
+      <a href="#" class="logo">
+        <img src="logo.png" alt="Maria Nails Studio" />
+      </a>
+      <ul class="nav-right">
+        <li><a href="#studio">Studio</a></li>
+        <li><a href="https://vev.co/nails-by-maria-waalwijk" target="_blank" rel="noopener" class="nav-boek">Boek</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menu" onclick="this.closest('nav').classList.toggle('open')">&#9776;</button>
+    </div>
   </nav>
 
   <!-- HERO -->
   <section class="hero">
     <div class="hero-text">
-      <p class="hero-meta">EST. 2018 · LONDON, WI</p>
-      <h1>The art of<br /><em>quiet luxury</em><br />at your<br />fingertips.</h1>
-      <p class="hero-sub">A dedicated nail studio where every detail — from scent to finish — is considered.</p>
+      <p class="overline">Waalwijk, Nederland</p>
+      <h1>Professionele <em>manicure</em> &amp; pedicure in Waalwijk.</h1>
+      <p class="hero-sub">Mooie, verzorgde nagels met aandacht voor detail, hygiëne en een natuurlijk resultaat.</p>
       <div class="hero-btns">
-        <a href="#contact" class="btn-dark">BOOK A<br />VISIT</a>
-        <a href="#treatments" class="btn-outline">VIEW<br />SERVICES</a>
+        <a href="https://vev.co/nails-by-maria-waalwijk" target="_blank" rel="noopener" class="btn-dark">Boek je afspraak</a>
+        <a href="#behandelingen" class="btn-outline">Bekijk behandelingen</a>
       </div>
     </div>
-    <div class="hero-img"></div>
+    <div class="hero-img">
+      <img src="../image-top.jpg" alt="Manicure behandeling" />
+    </div>
   </section>
 
-  <!-- STATS -->
-  <div class="stats">
-    <div><span class="stat-num">5,000+</span><span class="stat-label">HAPPY CLIENTS</span></div>
-    <div><span class="stat-num">4.97</span><span class="stat-label">AVERAGE RATING</span></div>
-    <div><span class="stat-num">30+</span><span class="stat-label">SHADES IN SEASON</span></div>
-    <div><span class="stat-num">7yrs</span><span class="stat-label">IN THE CRAFT</span></div>
-  </div>
-
-  <!-- TREATMENTS -->
-  <section class="treatments" id="treatments">
-    <div class="treatments-header">
-      <div>
-        <p class="section-label">WHAT WE OFFER</p>
-        <h2>Our <em>treatments</em></h2>
-      </div>
-      <p class="treatments-intro">Each service is carried out with slow intention and only the finest professional products.</p>
+  <!-- TAGLINE BAND -->
+  <section class="band">
+    <div class="band-inner">
+      <p class="band-quote">Mooie nagels. Verzorgde handen. Met aandacht gedaan.</p>
+      <p class="band-body">Bij Maria Nails Studio ben je welkom voor professionele manicure, pedicure, BIAB, gel en nail art. Ik werk met veel aandacht voor hygiëne, de gezondheid van de natuurlijke nagel en een verzorgd, duurzaam resultaat.</p>
     </div>
-    <div class="treatments-grid">
-      <div class="treatment-card">
-        <div class="card-top"><span class="card-name">Classic Manicure</span><span class="card-time">45 MIN</span></div>
-        <p>Shape, buff, cuticle care, and your choice of polish from our curated palette.</p>
-        <p class="price">$35</p>
-      </div>
-      <div class="treatment-card">
-        <div class="card-top"><span class="card-name">Gel Manicure</span><span class="card-time">60 MIN</span></div>
-        <p>Long-lasting gel formula with chip-free shine for up to three weeks.</p>
-        <p class="price">$55</p>
-      </div>
-      <div class="treatment-card">
-        <div class="card-top"><span class="card-name">Nail Art</span><span class="card-time">60+ MIN</span></div>
-        <p>Hand-painted designs, florals, abstract linework, or minimalist accents.</p>
-        <p class="price"><em>from $20</em></p>
-      </div>
-      <div class="treatment-card">
-        <div class="card-top"><span class="card-name">Spa Pedicure</span><span class="card-time">75 MIN</span></div>
-        <p>Warm soak, exfoliation, massage, and impeccable polish finish.</p>
-        <p class="price">$65</p>
-      </div>
-      <div class="treatment-card">
-        <div class="card-top"><span class="card-name">Acrylic Extensions</span><span class="card-time">90 MIN</span></div>
-        <p>Full set sculpted to your desired shape — almond, coffin, stiletto, or square.</p>
-        <p class="price">$80</p>
-      </div>
-      <div class="treatment-card">
-        <div class="card-top"><span class="card-name">Paraffin Treatment</span><span class="card-time">20 MIN</span></div>
-        <p>Deep-nourishing warm wax wrap for silky-soft hands or feet.</p>
-        <p class="price">$25</p>
+  </section>
+
+  <!-- WHY -->
+  <section class="why" id="over">
+    <div class="container">
+      <p class="overline">Waarom Maria Nails Studio?</p>
+      <h2>Kwaliteit die je <em>voelt.</em></h2>
+      <div class="why-grid">
+        <div class="why-card">
+          <span class="dash"></span>
+          <h3><em>Professionele werkwijze</em></h3>
+          <p>Elke behandeling wordt zorgvuldig uitgevoerd met aandacht voor detail en een mooi eindresultaat.</p>
+        </div>
+        <div class="why-card">
+          <span class="dash"></span>
+          <h3><em>Hygiëne staat voorop</em></h3>
+          <p>Instrumenten worden professioneel gereinigd en gesteriliseerd. Een schone werkomgeving is vanzelfsprekend.</p>
+        </div>
+        <div class="why-card">
+          <span class="dash"></span>
+          <h3><em>Persoonlijke aandacht</em></h3>
+          <p>Geen standaard behandeling. Ik kijk naar jouw nagels, wensen en de uitstraling die bij jou past.</p>
+        </div>
+        <div class="why-card">
+          <span class="dash"></span>
+          <h3><em>Kwaliteit &amp; duurzaamheid</em></h3>
+          <p>Niet alleen mooie nagels op de dag zelf, maar een verzorgd resultaat waar je zo lang mogelijk plezier van hebt.</p>
+        </div>
+        <div class="why-card">
+          <span class="dash"></span>
+          <h3><em>Rust &amp; comfort</em></h3>
+          <p>Een moment voor jezelf in een rustige, warme en professionele omgeving.</p>
+        </div>
+        <div class="why-card why-card--img"></div>
       </div>
     </div>
   </section>
 
-  <!-- GALLERY -->
-  <section class="gallery" id="gallery">
-    <p class="section-label">OUR WORK</p>
-    <h2><em>Gallery</em></h2>
-    <div class="gallery-grid">
-      <div class="g1 gimg"></div>
-      <div class="g2 gimg"></div>
-      <div class="g3 gimg"></div>
-      <div class="g4 gimg"></div>
-      <div class="g5 gimg"></div>
+  <!-- BEHANDELINGEN -->
+  <section class="behandelingen" id="behandelingen">
+    <div class="container">
+      <div class="beh-header">
+        <div>
+          <p class="overline">Wat we aanbieden</p>
+          <h2>Onze <em>behandelingen</em></h2>
+        </div>
+        <p class="beh-sub">Elke behandeling wordt zorgvuldig uitgevoerd met de juiste producten en persoonlijke aandacht.</p>
+      </div>
+      <div class="beh-grid">
+        <div class="beh-card">
+          <h3>Manicure</h3>
+          <p>Een verzorgde manicure waarbij de nagelriem en natuurlijke nagels zorgvuldig worden verzorgd.</p>
+          <span class="price">vanaf €59</span>
+        </div>
+        <div class="beh-card">
+          <h3>BIAB / Builder Gel</h3>
+          <p>Voor extra stevigheid en een mooie, natuurlijke uitstraling van de eigen nagels.</p>
+          <span class="price">vanaf €66</span>
+        </div>
+        <div class="beh-card">
+          <h3>Gel Polish</h3>
+          <p>Een strakke en verzorgde kleur op de natuurlijke nagel.</p>
+          <span class="price">vanaf €53</span>
+        </div>
+        <div class="beh-card">
+          <h3>Nail Extensions</h3>
+          <p>Voor wie graag langere nagels wil. Lengte en vorm worden afgestemd op jouw wensen.</p>
+          <span class="price">vanaf €75</span>
+        </div>
+        <div class="beh-card">
+          <h3>French &amp; Nail Art</h3>
+          <p>Van een klassieke French tot minimalistische details, kleuraccenten en creatieve designs.</p>
+          <span class="price">French vanaf €10 extra</span>
+        </div>
+        <div class="beh-card">
+          <h3>Pedicure</h3>
+          <p>Een professionele cosmetische pedicure voor verzorgde voeten en nagels.</p>
+          <span class="price">vanaf €73</span>
+        </div>
+        <div class="beh-card beh-card--popular">
+          <span class="popular-tag">Populair</span>
+          <h3>Manicure + Pedicure</h3>
+          <p>Een complete behandeling voor verzorgde handen en voeten.</p>
+          <span class="price">vanaf €129</span>
+        </div>
+        <div class="beh-card beh-card--popular">
+          <span class="popular-tag">Populair</span>
+          <h3>4-Handen behandeling</h3>
+          <p>Manicure en pedicure tegelijkertijd uitgevoerd door twee professionals. Klaar in 1u15.</p>
+          <span class="price">€139</span>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section class="about" id="about">
-    <div class="about-img"></div>
-    <div class="about-text">
-      <p class="section-label">OUR STORY</p>
-      <h2>Beauty that begins<br />with <em>stillness.</em></h2>
-      <p>Petal & Pore was founded on one belief: that a nail appointment should feel like a pause, not a chore. We built a studio that smells of jasmine and beeswax, sounds like ambient quiet, and feels like it was made entirely for you.</p>
-      <p>Every technician trained with us for a minimum of two years before taking a client. We use only non-toxic, cruelty-free formulas — and we never rush.</p>
-      <ul>
-        <li>Non-toxic, 9-free formulas</li>
-        <li>Cruelty-free products only</li>
-        <li>Sanitised tools for every client</li>
-      </ul>
+  <!-- STIJLEN -->
+  <section class="stijlen">
+    <div class="container">
+      <p class="overline">Jouw stijl, jouw nagels</p>
+      <h2>Van naturel tot <em>creatief.</em></h2>
+      <div class="stijl-grid">
+        <div class="stijl-card">
+          <h4>Natural</h4>
+          <p>Clean, naturel en tijdloos.</p>
+        </div>
+        <div class="stijl-card">
+          <h4>French</h4>
+          <p>Van klassiek wit tot een moderne of gekleurde French.</p>
+        </div>
+        <div class="stijl-card">
+          <h4>Minimal</h4>
+          <p>Subtiele details voor een elegante uitstraling.</p>
+        </div>
+        <div class="stijl-card">
+          <h4>Color</h4>
+          <p>Een mooie kleur die perfect bij jou past.</p>
+        </div>
+        <div class="stijl-card">
+          <h4>Nail Art</h4>
+          <p>Voor wie iets bijzonders wil.</p>
+        </div>
+      </div>
+      <p class="instagram-link">Bekijk onze portfolio op <a href="https://www.threads.com/@maria_protsiuk_" target="_blank" rel="noopener">Instagram</a></p>
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
-  <section class="testimonials" id="contact">
-    <p class="section-label">KIND WORDS</p>
-    <h2>What our clients <em>say</em></h2>
-    <div class="testi-grid">
-      <div class="testi-card">
-        <div class="stars">★★★★★</div>
-        <p>"The most tranquil nail experience in the city. I leave feeling genuinely restored, not just polished."</p>
-        <span>— AMELIE T.</span>
+  <!-- STUDIO / GALLERY -->
+  <section class="studio" id="studio">
+    <div class="container">
+      <p class="overline">Een kijkje in de studio</p>
+      <div class="studio-header">
+        <h2>Echte <em>resultaten.</em></h2>
+        <p>Geen stockfoto's — mijn eigen werk en behandelingen.</p>
       </div>
-      <div class="testi-card">
-        <div class="stars">★★★★★</div>
-        <p>"Finally found my forever nail studio. The attention to detail is extraordinary — worth every penny."</p>
-        <span>— SOPHIE N.</span>
-      </div>
-      <div class="testi-card">
-        <div class="stars">★★★★★</div>
-        <p>"From the scent of the space to the quality of the gel, everything is considered. Absolute perfection."</p>
-        <span>— NATALIE W.</span>
+      <div class="gallery">
+        <div class="gallery-main"><img src="../image-l.jpg" alt="Studio" /></div>
+        <div class="gallery-top-right"><img src="../image-t-m.jpg" alt="Behandeling" /></div>
+        <div class="gallery-bottom-right-1"><img src="../image-t-r.jpg" alt="Resultaat" /></div>
+        <div class="gallery-bottom-right-2"><img src="../image-b-m.jpg" alt="Studio detail" /></div>
+        <div class="gallery-bottom-right-3"><img src="../image-b-r.jpg" alt="Nagels" /></div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER CTA -->
+  <!-- OVER MARIA -->
+  <section class="about">
+    <div class="container about-inner">
+      <div class="about-img-wrap">
+        <div class="img-placeholder about-photo"><img src="../image-me.jpg" alt="Maria" /></div>
+        <div class="about-badge">
+          <p><em>Kwaliteit.<br />Hygiëne.<br />Aandacht.</em></p>
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="overline">Over Maria</p>
+        <h2>Welkom bij<br /><em>Maria Nails Studio.</em></h2>
+        <p>Mijn naam is Maria en ik ben de eigenaar en nail artist van Maria Nails Studio in Waalwijk. Ik vind het belangrijk dat een manicure of pedicure niet alleen mooi is, maar ook zorgvuldig en hygiënisch wordt uitgevoerd.</p>
+        <p>Mijn stijl is elegant, verzorgd en modern — van een natuurlijke look tot een mooie French of een creatief design. Mijn doel is dat je niet alleen tevreden naar huis gaat met mooie nagels, maar ook met een fijn gevoel over de behandeling.</p>
+        <div class="about-hygiene">
+          <p class="overline">Hygiëne &amp; kwaliteit</p>
+          <p>Instrumenten worden professioneel gereinigd, gedesinfecteerd en gesteriliseerd. Zo kun jij ontspannen genieten van jouw behandeling.</p>
+        </div>
+        <a href="https://vev.co/nails-by-maria-waalwijk" target="_blank" rel="noopener" class="btn-dark">Maak een afspraak</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="boek">
+    <div class="container cta-inner">
+      <p class="overline cta-overline">Klaar voor verzorgde nagels?</p>
+      <h2 class="cta-title"><em>Boek je afspraak.</em></h2>
+      <p class="cta-sub">Gun jezelf een moment van aandacht. Mooie nagels beginnen met een goede afspraak.</p>
+      <div class="cta-btns">
+        <a href="https://vev.co/nails-by-maria-waalwijk" target="_blank" rel="noopener" class="btn-light">Boek online</a>
+        <a href="https://www.threads.com/@maria_protsiuk_" target="_blank" rel="noopener" class="btn-ghost-light">Bekijk Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLOATING BOOK BUTTON -->
+  <a href="https://vev.co/nails-by-maria-waalwijk" target="_blank" rel="noopener" class="fab" aria-label="Boek je afspraak">
+    Boek je afspraak
+  </a>
+
+<!-- FOOTER -->
   <footer>
-    <p class="footer-cta">READY FOR YOUR VISIT?</p>
-    <a href="mailto:hello@petalpore.com" class="btn-dark">BOOK NOW</a>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="logo.jpg" alt="Maria Nails Studio" class="footer-logo" />
+        <p>Professionele nagelverzorging in Waalwijk, met aandacht voor kwaliteit, hygiëne en detail.</p>
+      </div>
+      <div class="footer-col">
+        <p class="overline">Behandelingen</p>
+        <ul>
+          <li>Manicure · BIAB · Gel · Nail Art</li>
+          <li><strong>Pedicure · 4-Handen</strong></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="overline">Locatie</p>
+        <p>📍 Irenestraat 5, 5141 GJ Waalwijk</p>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Irenestraat+5,+5141+GJ+Waalwijk,+Nederland" target="_blank" rel="noopener" class="route-link">Plan je route →</a>
+        <p class="footer-copy">© Maria Nails Studio<br /><a href="#">Privacy Policy</a> · <a href="#">Algemene voorwaarden</a></p>
+      </div>
+    </div>
   </footer>
 
 </body>
